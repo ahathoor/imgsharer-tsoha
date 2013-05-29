@@ -2,6 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 
 require './config/sequel'
+require 'haml'
 
 class App < Sinatra::Base
   configure :development do
@@ -10,6 +11,41 @@ class App < Sinatra::Base
 
   get '/' do
     "hello"
+  end
+
+  get '/uploadtest' do
+    haml :uploadfile
+  end
+
+  post '/uploadtest' do
+    unless DB.table_exists?(:pictures)
+      DB.create_table :pictures do
+        column :name, :text
+        column :filename, :text
+      end
+    end
+
+    filename = 'uploads/' + params[:name]
+    picname = params[:name]
+    File.open(filename, 'w') do |f|
+      f.write(params['myfile'][:tempfile].read)
+    end
+
+    pictures = DB[:pictures]
+    pictures << {:name => params[:name], :filename => filename}
+
+    pictures.each do |picture|
+        p picture
+      end
+  end
+
+  get '/t3' do
+    @name = 'pelle'
+    erb :testview, name: @name
+  end
+
+  post '/testpost' do
+    "what you inputtin \"#{params[:name]}\" fo anyway?"
   end
 
   get '/test' do

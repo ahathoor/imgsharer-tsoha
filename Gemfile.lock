@@ -8,6 +8,8 @@ GEM
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
+    haml (4.0.3)
+      tilt
     pg (0.15.1)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -39,6 +41,7 @@ PLATFORMS
 DEPENDENCIES
   eventmachine (~> 1.0.0.beta.4.1)
   foreman
+  haml
   pg
   sequel
   sinatra
