@@ -1,0 +1,25 @@
+%html
+  %head
+    %link(rel="stylesheet" type="text/css" href="style.css" )
+  %body
+    %section
+      %form(method="post" action="/login")
+        %p
+          name
+          %input(type="text" name="username" )
+        %p
+          password
+          %input(type="text" name="password" )
+        %input(type="submit" value="Login" )
+    %section
+      %form(method="post" action="/register")
+        %p
+          name
+          %input(type="text" name="username" )
+        %p
+          password
+          %input(type="text" name="password" )
+        %input(type="submit" value="Register" )
+    %section
+      - if defined? virhe
+        =virhe
