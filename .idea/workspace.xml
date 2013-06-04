@@ -2,25 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/kirjautumislomake.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/loginregister.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/mega/Menu_013.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/semi/Selection_003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/mainpage.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/view_images.haml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/kirjautumislomake.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/testview.erb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/uploadfile.haml" afterPath="$PROJECT_DIR$/views/upload.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.rb" afterPath="$PROJECT_DIR$/web.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tsoha.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370183504928" ignored="false" />
-    <file path="/web.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370287026639" ignored="false" />
+    <file path="/web.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370342121346" ignored="false" />
     <file path="/sequel.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369651093237" ignored="false" />
     <file path="/testview.erb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369659057647" ignored="false" />
     <file path="/Gemfile" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369833522933" ignored="false" />
     <file path="/uploadfile.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369835029915" ignored="false" />
-    <file path="/mainpage.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369868363747" ignored="false" />
+    <file path="/mainpage.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370343319107" ignored="false" />
     <file path="/style.css" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369868079685" ignored="false" />
     <file path="/kirjautumislomake.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370284322925" ignored="false" />
     <file path="/temp.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370284239475" ignored="false" />
     <file path="/loginregister.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370284361071" ignored="false" />
+    <file path="/view_images.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370343345404" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,28 +45,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="web.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="15" selection-start="1516" selection-end="1516" vertical-scroll-proportion="0.4688385">
+            <state line="49" column="33" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kirjautumislomake.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/kirjautumislomake.haml">
+      <file leaf-file-name="view_images.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/view_images.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="48" selection-start="186" selection-end="223" vertical-scroll-proportion="-3.125">
+            <state line="5" column="9" selection-start="106" selection-end="106" vertical-scroll-proportion="0.1014885">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uploadfile.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/uploadfile.haml">
+      <file leaf-file-name="mainpage.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/mainpage.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="-6.875">
+            <state line="4" column="9" selection-start="66" selection-end="66" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/upload.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="12" selection-start="211" selection-end="211" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -80,33 +94,6 @@
         <entry file="file://$PROJECT_DIR$/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="27" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testview.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/testview.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="37" selection-start="133" selection-end="133" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sequel.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/sequel.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="17" selection-end="80" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="9" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,18 +132,19 @@
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/views/style.css" />
         <option value="$PROJECT_DIR$/views/uploadfile.haml" />
-        <option value="$PROJECT_DIR$/views/mainpage.haml" />
         <option value="$PROJECT_DIR$/views/kirjautumislomake.haml" />
         <option value="$PROJECT_DIR$/views/loginregister.haml" />
         <option value="$PROJECT_DIR$/web.rb" />
+        <option value="$PROJECT_DIR$/views/mainpage.haml" />
+        <option value="$PROJECT_DIR$/views/view_images.haml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
-    <option name="y" value="142" />
-    <option name="width" value="1434" />
-    <option name="height" value="893" />
+    <option name="x" value="57" />
+    <option name="y" value="44" />
+    <option name="width" value="1271" />
+    <option name="height" value="937" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -246,6 +234,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tsoha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tsoha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mega" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,7 +398,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="142" width="1434" height="893" extended-state="0" />
+    <frame x="57" y="44" width="1271" height="937" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -400,12 +406,12 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34587553" sideWeight="0.6702849" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39212468" sideWeight="0.6702849" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -475,20 +481,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/sequel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="44" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="27" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
@@ -534,37 +526,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/mega/Menu_013.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/sequel.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="17" selection-end="80" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/uploadfile.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/loginregister.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="625" selection-end="625" vertical-scroll-proportion="-14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/kirjautumislomake.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="48" selection-start="186" selection-end="223" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/testview.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="133" selection-end="133" vertical-scroll-proportion="-1.875">
+        <state line="1" column="0" selection-start="17" selection-end="80" vertical-scroll-proportion="0.020242915">
           <folding />
         </state>
       </provider>
@@ -576,9 +545,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/loginregister.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="20" selection-start="625" selection-end="625" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/upload.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="211" selection-end="211" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="15" selection-start="1516" selection-end="1516" vertical-scroll-proportion="0.4688385">
+        <state line="49" column="33" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mainpage.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="66" selection-end="66" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/view_images.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="9" selection-start="106" selection-end="106" vertical-scroll-proportion="0.1014885">
           <folding />
         </state>
       </provider>

@@ -1,0 +1,6 @@
+%html
+  %head
+  %body
+    - for picture in DB[:pictures] do
+      %img(src="#{picture[:path]}" )
+      %br

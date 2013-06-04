@@ -3,10 +3,15 @@ require "sinatra/reloader"
 
 require './config/sequel'
 require 'haml'
+require 'fileutils'
 
 class App < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
+  end
+
+  configure do
+    enable :sessions
   end
 
   helpers do
@@ -25,12 +30,24 @@ class App < Sinatra::Base
     end
   end
 
-  get '/uploadtest' do
-    haml :uploadfile
+  get '/upload' do
+    haml :upload
+  end
+
+  get '/view_images' do
+    haml :view_images
+  end
+
+  get '/uploads/:user/:image' do
+    File.read("uploads/#{params[:user]}/#{params[:image]}")
   end
 
   get '/loginregister' do
     haml :loginregister
+  end
+
+  get '/mainpage' do
+    haml :mainpage
   end
 
   post '/register' do
@@ -45,42 +62,49 @@ class App < Sinatra::Base
     end
   end
 
-  post '/login' do
-    ret = "Available users and passwords: <br>"
-    for user in DB[:users] do
-       ret += user[:username] + ":" + user[:password] + "<br>"
-    end
+  get '/logout' do
+    session[:kayttaja] = nil
+    redirect '/loginregister'
+  end
 
+  post '/login' do
     user = DB[:users].where('username = ?', params[:username])
     p user
     if user.empty?
-      return ret + "Username not found!"
+      return "Username not found!"
     end
 
     user = DB[:users].where('username = ? and password = ?', params[:username], params[:password])
     if user.empty?
-      return ret + "supplied password incorrect!"
+      return "supplied password incorrect!"
     end
 
     session[:kayttaja] = user.first[:id]
-
-    return ret + "Successfully logged in."
+    redirect '/mainpage'
   end
 
-  post '/uploadtest' do
+  post '/upload' do
+    if !params[:myfile][:type].include? "image"
+      return "Not a valid image file"
+    end
 
-    filename = 'uploads/' + params[:name]
-    picname = params[:name]
-    File.open(filename, 'w') do |f|
+    path = "uploads/#{kirjautunut_kayttaja[:username]}/#{params[:myfile][:filename]}"
+    unless File.directory?(File.dirname(path))
+      FileUtils.mkpath(File.dirname(path))
+    end
+
+    File.open(path, 'w') do |f|
       f.write(params['myfile'][:tempfile].read)
     end
 
     pictures = DB[:pictures]
-    pictures << {:name => params[:name], :filename => filename}
+    pictures << {:name => params[:name], :path => path, :owner => session[:kayttaja]}
 
+    plist = ""
     pictures.each do |picture|
-        p picture
-      end
+        plist += "#{picture}<br>"
+    end
+    return plist
   end
 
 end
