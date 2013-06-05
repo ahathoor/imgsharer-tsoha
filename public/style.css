@@ -1,3 +1,49 @@
 body {
-    background-color: gold;
+    background-color: lightgoldenrodyellow;
+    font-family: sans-serif;
+    color: #262626;
+}
+.imageview {
+    width: 500px;
+}
+.comment {
+    margin: 10px 0px 10px 0px;
+    border-radius: 15px;
+    border-color: #bbbbbb #dddddd #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+}
+.commenter {
+    margin: 2px 0px 2px 10px;
+    font-weight: bold;
+    font-size: smaller;
+    color: deeppink;
+}
+.comment_text{
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 0px 15px 15px;
+    color: #444444;
+}
+.commentfield {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    border-color: #bbbbbb #dddddd #eeeeee;
+    border-style: solid;
+    border-width: 3px;
+    color: #444;
+    font-family: arial;
+    line-height: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+.commentform {
+    padding-top: 20px;
+}
+.commentbutton {
+    float: right;
+    padding: 0 10 0 10;
+    border-color: #efefef;
 }

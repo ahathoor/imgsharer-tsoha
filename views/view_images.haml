@@ -1,6 +1,15 @@
 %html
   %head
+    %link(rel="stylesheet" type="text/css" href="/style.css" )
   %body
-    - for picture in DB[:pictures] do
-      %img(src="#{picture[:path]}" )
+    %h1
+      Picture listing
+    %ul
+      - for picture in pictures_visible_for_current_user do
+        %li
+          %a(href="viewimage/#{picture[:owner]}/#{picture[:id]}" )
+            =picture[:name]
+          %br
+    %a(href="/mainpage")
+      back to main page
       %br

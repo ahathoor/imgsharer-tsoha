@@ -1,0 +1,24 @@
+%html
+  %head
+    %link(rel="stylesheet" type="text/css" href="/style.css" )
+  %body.imageview
+    %h1
+      =image[:name]
+    %h2
+      owner:
+      =DB[:users].where("id = ?", image[:owner]).first[:username]
+    %a(href="/image/#{image[:owner]}/#{image[:id]}" )
+      %img(src="/image/#{image[:owner]}/#{image[:id]}" width="500" )
+    .comments
+      - DB[:comments].where("picture_id = ?", image[:id]).each do |comment|
+        .comment
+          .comment_text
+            =comment[:text]
+          .commenter
+            \-
+            =DB[:users].where("id = ?", comment[:commenter]).first[:username]
+    .commentform
+      %form(method="post" action="/comment" )
+        %input(type="hidden" name="targetid" value="#{image[:id]}")
+        %input.commentfield(type="text" name="comment")
+        %input.commentbutton(type="submit" value=">>")

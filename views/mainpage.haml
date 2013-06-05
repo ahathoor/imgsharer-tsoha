@@ -1,12 +1,18 @@
-%p
-  logged in as:
-  =kirjautunut_kayttaja[:username]
-%p
-  %a(href="/upload" )
-    upload file.
-%p
-  %a(href="/view_images" )
-    view images.
-%p
-  %a(href="/logout" )
-    log out.
+%html
+  %head
+    %link(rel="stylesheet" type="text/css" href="/style.css" )
+%body
+  %h1
+    Main page
+  %p
+    logged in as:
+    =kirjautunut_kayttaja[:username]
+  %p
+    %a(href="/upload" )
+      upload file.
+  %p
+    %a(href="/view_images" )
+      view images.
+  %p
+    %a(href="/logout" )
+      log out.
