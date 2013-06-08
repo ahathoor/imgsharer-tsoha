@@ -5,13 +5,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile (copy).lock" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/Hiyo" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments.rb" afterPath="$PROJECT_DIR$/config/environments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.rb" afterPath="$PROJECT_DIR$/web.rb" />
     </list>
     <ignored path="tsoha.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370697489645" ignored="false" />
     <file path="/web.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370697511428" ignored="false" />
-    <file path="/sequel.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369651093237" ignored="false" />
+    <file path="/sequel.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370703219134" ignored="false" />
     <file path="/testview.erb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369659057647" ignored="false" />
     <file path="/Gemfile" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369833522933" ignored="false" />
     <file path="/uploadfile.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369835029915" ignored="false" />
@@ -42,10 +41,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="web.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="26" selection-start="44" selection-end="44" vertical-scroll-proportion="0.019379845">
+            <state line="0" column="26" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environments.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="156" selection-start="338" selection-end="338" vertical-scroll-proportion="0.07978723">
               <folding />
             </state>
           </provider>
@@ -123,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/sequel.rb" />
         <option value="$PROJECT_DIR$/views/testview.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
@@ -137,12 +144,14 @@
         <option value="$PROJECT_DIR$/views/view_image.haml" />
         <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/web.rb" />
+        <option value="$PROJECT_DIR$/config/sequel.rb" />
+        <option value="$PROJECT_DIR$/config/environments.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="563" />
-    <option name="y" value="86" />
+    <option name="x" value="360" />
+    <option name="y" value="118" />
     <option name="width" value="1499" />
     <option name="height" value="937" />
   </component>
@@ -398,7 +407,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="563" y="86" width="1499" height="937" extended-state="0" />
+    <frame x="360" y="118" width="1499" height="937" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -483,13 +492,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="27" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -527,13 +529,6 @@
     <entry file="file://$PROJECT_DIR$/uploads/mega/Menu_013.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/sequel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="17" selection-end="80" vertical-scroll-proportion="0.020242915">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/upload.haml">
@@ -578,9 +573,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/sequel.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="63" selection-start="80" selection-end="80" vertical-scroll-proportion="0.019607844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="44" selection-end="44" vertical-scroll-proportion="0.019379845">
+        <state line="0" column="26" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="156" selection-start="338" selection-end="338" vertical-scroll-proportion="0.07978723">
           <folding />
         </state>
       </provider>
