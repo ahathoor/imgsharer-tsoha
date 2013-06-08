@@ -182,6 +182,3 @@ def initDB
   end
 end
 
-initDB
-App.run!
-
