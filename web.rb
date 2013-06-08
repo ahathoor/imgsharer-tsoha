@@ -39,7 +39,25 @@ class App < Sinatra::Base
   end
 
   get '/view_images' do
-    haml :view_images
+    haml :view_images, :locals => {:images_to_be_listed => pictures_visible_for_current_user}
+  end
+
+  get '/view_images/:tags' do
+    cats = DB[:categorizations]
+    matches = pictures_visible_for_current_user
+    params[:tags].split('+').each_with_index do |tag,i|
+      if i==0
+        cats = cats.where("category_name = ?", tag)
+      else
+        cats = cats.or("category_name = ?", tag)
+      end
+    end
+    matching_ids = []
+    cats.each do |cat|
+      matching_ids.push(cat[:picture_id])
+    end
+    matches = matches.where("id in ?", matching_ids)
+    haml :view_images, :locals => {:images_to_be_listed => matches}
   end
 
   get '/image/:user/:image' do

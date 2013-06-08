@@ -5,9 +5,9 @@
     %h1
       Picture listing
     %ul
-      - for picture in pictures_visible_for_current_user do
+      - for picture in images_to_be_listed do
         %li
-          %a(href="viewimage/#{picture[:owner]}/#{picture[:id]}" )
+          %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
             =picture[:name]
           %br
     %a(href="/mainpage")
