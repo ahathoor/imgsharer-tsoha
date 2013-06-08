@@ -67,6 +67,12 @@ class App < Sinatra::Base
   post '/register' do
     username = params[:username]
     password = params[:password]
+    if username.length < 3
+      return "Error: username must be at least 3 letters long"
+    end
+    if password.length < 5
+      return "Error: username must be at least 5 letters long"
+    end
     users = DB[:users]
     if !DB[:users].where(:username => username).empty?
       return "error, username already exists"
@@ -136,6 +142,9 @@ class App < Sinatra::Base
     path = "uploads/#{kirjautunut_kayttaja[:id]}/#{addedID}"
     unless File.directory?(File.dirname(path))
       FileUtils.mkpath(File.dirname(path))
+    end
+    if File.exist?path
+      File.delete(path)
     end
     File.open(path, 'w') do |f|
       f.write(params['myfile'][:tempfile].read)

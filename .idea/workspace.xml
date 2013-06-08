@@ -4,12 +4,14 @@
     <list default="true" id="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile (copy).lock" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/Hiyo" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments.rb" afterPath="$PROJECT_DIR$/config/environments.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/mega/Menu_013.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/semi/Selection_003.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.rb" afterPath="$PROJECT_DIR$/web.rb" />
     </list>
     <ignored path="tsoha.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370697489645" ignored="false" />
-    <file path="/web.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370697511428" ignored="false" />
+    <file path="/web.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370704983799" ignored="false" />
     <file path="/sequel.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370703219134" ignored="false" />
     <file path="/testview.erb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369659057647" ignored="false" />
     <file path="/Gemfile" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369833522933" ignored="false" />
@@ -42,19 +44,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="web.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="26" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+            <state line="143" column="11" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.60106385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environments.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="environments.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="76" selection-start="258" selection-end="258" vertical-scroll-proportion="0.078431375">
+            <state line="4" column="76" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +65,7 @@
       <file leaf-file-name="upload.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/upload.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="62" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+            <state line="2" column="62" selection-start="76" selection-end="76" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -72,7 +74,7 @@
       <file leaf-file-name="loginregister.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/loginregister.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="14" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
+            <state line="28" column="14" selection-start="696" selection-end="696" vertical-scroll-proportion="-17.5">
               <folding />
             </state>
           </provider>
@@ -144,9 +146,9 @@
         <option value="$PROJECT_DIR$/views/loginregister.haml" />
         <option value="$PROJECT_DIR$/views/view_image.haml" />
         <option value="$PROJECT_DIR$/public/style.css" />
-        <option value="$PROJECT_DIR$/web.rb" />
         <option value="$PROJECT_DIR$/config/sequel.rb" />
         <option value="$PROJECT_DIR$/config/environments.rb" />
+        <option value="$PROJECT_DIR$/web.rb" />
       </list>
     </option>
   </component>
@@ -244,24 +246,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsoha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsoha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mega" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,28 +511,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/mega/Menu_013.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/upload.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="62" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/mainpage.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/loginregister.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="14" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -581,16 +546,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+        <state line="4" column="76" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments.rb">
+    <entry file="file://$PROJECT_DIR$/views/upload.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="76" selection-start="258" selection-end="258" vertical-scroll-proportion="0.078431375">
+        <state line="2" column="62" selection-start="76" selection-end="76" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/loginregister.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="14" selection-start="696" selection-end="696" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="11" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.60106385">
           <folding />
         </state>
       </provider>
