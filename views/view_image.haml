@@ -9,6 +9,14 @@
       =DB[:users].where("id = ?", image[:owner]).first[:username]
     %a(href="/image/#{image[:owner]}/#{image[:id]}" )
       %img(src="/image/#{image[:owner]}/#{image[:id]}" width="500" )
+
+    .tags
+      - DB[:categorizations].where("picture_id = ?", image[:id]).each do |category|
+        =category[:category_name]
+      - if image[:owner] == session[:kayttaja]
+        %form.tagform(method="post" action="/addcategory" )
+          %input(type="hidden" name="targetid" value="#{image[:id]}")
+          %input.taginput(type="text" name="category")
     .comments
       - DB[:comments].where("picture_id = ?", image[:id]).each do |comment|
         .comment
@@ -22,3 +30,9 @@
         %input(type="hidden" name="targetid" value="#{image[:id]}")
         %input.commentfield(type="text" name="comment")
         %input.commentbutton(type="submit" value=">>")
+    %p
+      %a(href="/mainpage")
+        back to main page
+      %br
+      %a(href="/view_images")
+        back to image listing

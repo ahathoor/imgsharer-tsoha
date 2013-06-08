@@ -1,0 +1,6 @@
+development:
+    adapter: postgresql
+    database: mydb
+    username: postgres
+    password: mikko
+    host: localhost

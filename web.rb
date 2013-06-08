@@ -1,7 +1,8 @@
 require "sinatra"
 require "sinatra/reloader"
+require 'sinatra/activerecord'
 
-require './config/sequel'
+require './config/environments'
 require 'haml'
 require 'fileutils'
 
@@ -101,6 +102,14 @@ class App < Sinatra::Base
     params[:comment]
     params[:targetid]
     DB[:comments] << {:commenter => session[:kayttaja], :text => params[:comment], :picture_id => params[:targetid]}
+    redirect back
+  end
+
+  post '/addcategory' do
+    if DB[:pictures].where("id = ? and owner = ?",params[:targetid],session[:kayttaja]).empty?
+      return "This is not your image"
+    end
+    DB[:categorizations] << {:category_name => params[:category], :picture_id => params[:targetid]}
     redirect back
   end
 
