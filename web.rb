@@ -52,6 +52,20 @@ class App < Sinatra::Base
     haml :view_image, :locals => {:image => image}
   end
 
+  get '/delete/:user/:image' do
+    if DB[:pictures].where("Owner = ?", params[:image]).empty?
+      return "Error: this is not your image"
+    end
+    DB[:comments].where("picture_id = ?", params[:image]).delete
+    DB[:categorizations].where("picture_id = ?", params[:image]).delete
+    DB[:pictures].where("id = ?", params[:image]).delete
+    path = "uploads/#{session[:kayttaja]}/#{params[:image]}"
+    if File.exist?path
+      File.delete(path)
+    end
+    redirect '/view_images'
+  end
+
   get '/loginregister' do
     haml :loginregister
   end
@@ -139,7 +153,7 @@ class App < Sinatra::Base
     end
     pictures = DB[:pictures]
     addedID = pictures.insert({:name => params[:name], :owner => session[:kayttaja], :public => public})
-    path = "uploads/#{kirjautunut_kayttaja[:id]}/#{addedID}"
+    path = "uploads/#{session[:kayttaja]}/#{addedID}"
     unless File.directory?(File.dirname(path))
       FileUtils.mkpath(File.dirname(path))
     end
