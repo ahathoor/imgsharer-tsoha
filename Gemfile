@@ -1,7 +1,5 @@
 source :rubygems
 gem 'sinatra'
-gem 'activerecord'
-gem 'sinatra-activerecord'
 gem 'sinatra-contrib'
 gem 'thin'
 gem 'sequel'

@@ -1,6 +1,5 @@
 require "sinatra"
 require "sinatra/reloader"
-require 'sinatra/activerecord'
 
 require './config/environments'
 require 'haml'
