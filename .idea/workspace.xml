@@ -22,6 +22,7 @@
     <file path="/view_images.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370438444396" ignored="false" />
     <file path="/upload.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370358383364" ignored="false" />
     <file path="/view_image.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370518138834" ignored="false" />
+    <file path="/environments.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370703614018" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <file leaf-file-name="environments.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="156" selection-start="338" selection-end="338" vertical-scroll-proportion="0.07978723">
+            <state line="4" column="76" selection-start="258" selection-end="258" vertical-scroll-proportion="0.078431375">
               <folding />
             </state>
           </provider>
@@ -150,7 +151,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="360" />
+    <option name="x" value="201" />
     <option name="y" value="118" />
     <option name="width" value="1499" />
     <option name="height" value="937" />
@@ -407,7 +408,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="360" y="118" width="1499" height="937" extended-state="0" />
+    <frame x="201" y="118" width="1499" height="937" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -589,7 +590,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="156" selection-start="338" selection-end="338" vertical-scroll-proportion="0.07978723">
+        <state line="4" column="76" selection-start="258" selection-end="258" vertical-scroll-proportion="0.078431375">
           <folding />
         </state>
       </provider>
