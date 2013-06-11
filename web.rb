@@ -35,6 +35,9 @@ class App < Sinatra::Base
 
   before do
     unless kirjautunut? or request.path_info =~ /^\/loginregister/ or request.path_info =~ /^\/login/ or request.path_info =~ /^\/register/
+      if kirjautunut?
+        redirect '/mainpage'
+      end
       redirect '/loginregister'
     end
   end
