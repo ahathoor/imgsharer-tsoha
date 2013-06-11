@@ -7,21 +7,25 @@
       %h2
         Login
       %form(method="post" action="/login")
-        %p
-          name
-          %input(type="text" name="username" )
-        %p
-          password
-          %input(type="text" name="password" )
-        %input(type="submit" value="Login" )
+        name:
+        %br
+        %input.logregfield(type="text" name="username" )
+        %br
+        password:
+        %br
+        %input.logregfield(type="password" name="password" )
+        %br
+        %input.logregbutton(type="submit" value="Login" )
     %section.section
       %h2
         Register
       %form(method="post" action="/register")
-        %p
-          name
-          %input(type="text" name="username" )
-        %p
-          password
-          %input(type="text" name="password" )
-        %input(type="submit" value="Register" )
+        name:
+        %br
+        %input.logregfield(type="text" name="username" )
+        %br
+        password:
+        %br
+        %input.logregfield(type="text" name="password" )
+        %br
+        %input.logregbutton(type="submit" value="Register" )

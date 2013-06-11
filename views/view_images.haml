@@ -6,7 +6,14 @@
     .header.section
       %h1
         View images
-      #{filter}
+      - filter.split(' ').each do |f|
+        \##{f}
+
+      - categories = DB[:categorizations].where("picture_id in ?", images_to_be_listed.map(:id))
+      - if filter != ""
+        - categories = categories.where("category_name not in ?", filter.split(' '))
+      - categories.each do |category|
+        %a.tag(href="/view_images?tags=#{filter.gsub(' ', '+')}+#{category[:category_name]}" )="\##{category[:category_name]}"
     .useruploads.section
       %h3
         Your uploads:

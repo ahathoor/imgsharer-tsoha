@@ -9,10 +9,9 @@
         %p
           %input(type='file' name='myfile')
         %p
-          name
-          %input(type='text' name='name')
+          name:
+          %input.logregfield(type='text' name='name')
         %p
           %input(type="checkbox" name="public" checked="yes" )
           public?
-        %br
-        %input(type='submit' value='Upload!')
+        %input.logregbutton(type='submit' value='Upload!')

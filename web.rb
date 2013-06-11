@@ -56,7 +56,7 @@ class App < Sinatra::Base
     picture_ids_in_each_category = Hash.new
     matches = pictures_visible_for_current_user
     if !params[:tags].nil?
-      params[:tags].split('+').each do |tag|
+      params[:tags].split(' ').each do |tag|
           DB[:categorizations].where("category_name = ?", tag).each_with_index do |categorization,i|
             if i==0
               picture_ids_in_each_category[categorization[:category_name]] = []

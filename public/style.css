@@ -2,10 +2,52 @@ body {
     background-color: #262626;
     font-family: sans-serif;
     color: #262626;
-    width: 800px;
+    width: 500px;
     max-width: 98%;
     margin: 0;
     margin-left: 1%;
+}
+a {
+    color: #00d7d7;
+}
+a:visited {
+    color: #009797;
+}
+a:hover {
+    color: #5f5e2d;
+}
+a.tag:visited {
+    color: #00d7d7;
+}
+.logregfield {
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #fcfcfc;
+      border-color: #bbbbbb #dddddd #eeeeee;
+      border-style: solid;
+      border-width: 3px;
+      color: #444;
+      font-family: arial;
+      line-height: 25px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin: 0 0 5px 0;
+      width: 100%;
+  }
+.logregbutton {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #999999;
+    border-color: #bbbbbb #262626 #262626 #bbbbbb;
+    border-style: solid;
+    border-width: 3px;
+    color: #fcfcfc;
+    font-family: arial;
+    line-height: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+    width: 100%;
 }
 .section {
     padding: 0.4em;
