@@ -58,12 +58,45 @@ body {
     background-color: transparent;
     border-radius: 15px;
     border-width: 1px;
-    font-size: 20px;
+    font-size: 18px;
     width: 5em;
 }
 .tags {
-    font-size: 20px;
-    color: #aaaaaa;
+    font-size: 18px;
+    color: #666666;
     height: 50px;
     padding-top: 10px;
+}
+
+.tag {
+    color: #666666;
+}
+.tag:hover {
+    color: #00ffee;
+  }
+.tagdeleter {
+    color: #dd0000;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: -0px;
+    margin-left: -4px;
+    font-size: 0.5em;
+    vertical-align: text-top;
+}
+.tagdeleter:hover {
+    color: #ffc0cb;
+}
+.deletex {
+    text-decoration: none;
+    color: #dd0000;
+}
+.deleteimage:hover .deletex {
+    color: #ffc0cb;
+}
+.deleteimage {
+}
+.deletetext {
+}
+.deleteimage:hover .deletetext {
+    visibility: visible;
 }

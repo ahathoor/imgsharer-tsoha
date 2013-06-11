@@ -3,9 +3,19 @@
     %link(rel="stylesheet" type="text/css" href="/style.css" )
   %body
     %h1
-      Picture listing
+      ="Listing content: #{filter}"
+    %h3
+      Your uploads:
     %ul
-      - for picture in images_to_be_listed do
+      - for picture in images_to_be_listed.where("Owner = ?", session[:kayttaja]) do
+        %li
+          %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
+            =picture[:name]
+          %br
+    %h3
+      Uploads by others:
+    %ul
+      - images_to_be_listed.where("Owner != ?", session[:kayttaja]).each do |picture|
         %li
           %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
             =picture[:name]

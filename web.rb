@@ -39,25 +39,24 @@ class App < Sinatra::Base
   end
 
   get '/view_images' do
-    haml :view_images, :locals => {:images_to_be_listed => pictures_visible_for_current_user}
+    haml :view_images, :locals => {:images_to_be_listed => pictures_visible_for_current_user, :filter => "All"}
   end
 
   get '/view_images/:tags' do
-    cats = DB[:categorizations]
+    picture_ids_in_each_category = Hash.new
     matches = pictures_visible_for_current_user
-    params[:tags].split('+').each_with_index do |tag,i|
-      if i==0
-        cats = cats.where("category_name = ?", tag)
-      else
-        cats = cats.or("category_name = ?", tag)
-      end
+    params[:tags].split('+').each do |tag|
+        DB[:categorizations].where("category_name = ?", tag).each_with_index do |categorization,i|
+          if i==0
+            picture_ids_in_each_category[categorization[:category_name]] = []
+          end
+          picture_ids_in_each_category[categorization[:category_name]].push(categorization[:picture_id])
+        end
     end
-    matching_ids = []
-    cats.each do |cat|
-      matching_ids.push(cat[:picture_id])
+    picture_ids_in_each_category.each do |idsInCat|
+      matches = matches.where("id in ?", idsInCat[1])
     end
-    matches = matches.where("id in ?", matching_ids)
-    haml :view_images, :locals => {:images_to_be_listed => matches}
+    haml :view_images, :locals => {:images_to_be_listed => matches, :filter => "#{params[:tags]}"}
   end
 
   get '/image/:user/:image' do
@@ -71,7 +70,7 @@ class App < Sinatra::Base
   end
 
   get '/delete/:user/:image' do
-    if DB[:pictures].where("Owner = ?", params[:image]).empty?
+    if DB[:pictures].where("id = ? and Owner = ?", params[:image], session[:kayttaja]).empty?
       return "Error: this is not your image"
     end
     DB[:comments].where("picture_id = ?", params[:image]).delete
@@ -147,6 +146,18 @@ class App < Sinatra::Base
       return "This is not your image"
     end
     DB[:categorizations] << {:category_name => params[:category], :picture_id => params[:targetid]}
+    redirect back
+  end
+
+  get '/deletetag' do
+    tag = DB[:categorizations].where("id = ?", params[:tag_id])
+    if !tag
+      return "No such tag"
+    end
+    if DB[:pictures].where("id = ? and owner = ?",tag.first[:picture_id],session[:kayttaja]).empty?
+      return "This is not your image"
+    end
+    tag.delete
     redirect back
   end
 

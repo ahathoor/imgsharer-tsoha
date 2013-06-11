@@ -8,18 +8,23 @@
       owner:
       =DB[:users].where("id = ?", image[:owner]).first[:username]
     - if image[:owner] == session[:kayttaja]
-      x
-      %a(href="/delete/#{session[:kayttaja]}/#{image[:id]}" )
-        delete image
+      .deleteimage
+        %a.deletetext(href="/delete/#{session[:kayttaja]}/#{image[:id]}" )
+          delete image
     %a(href="/image/#{image[:owner]}/#{image[:id]}" )
       %img(src="/image/#{image[:owner]}/#{image[:id]}" width="500" )
 
     .tags
       - DB[:categorizations].where("picture_id = ?", image[:id]).each do |category|
-        =category[:category_name]
+        %a.tag(href="/view_images/#{category[:category_name]}" )="\##{category[:category_name]}"
+        - if image[:owner] == session[:kayttaja]
+          %a.tagdeleter(href="/deletetag?tag_id=#{category[:id]}" )
+            delete
+
       - if image[:owner] == session[:kayttaja]
         %form.tagform(method="post" action="/addcategory" )
           %input(type="hidden" name="targetid" value="#{image[:id]}")
+          ="\#"
           %input.taginput(type="text" name="category")
     .comments
       - DB[:comments].where("picture_id = ?", image[:id]).each do |comment|
