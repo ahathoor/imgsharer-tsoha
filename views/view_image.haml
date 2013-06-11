@@ -2,10 +2,15 @@
   %head
     %link(rel="stylesheet" type="text/css" href="/style.css" )
   %body.imageview
-    %h1
-      =image[:name]
-    %h2
-      owner:
+    - if image[:owner] == session[:kayttaja]
+      %form(method="get" action="/editimage" )
+        %input.title_edit(type="hidden" name="id" value="#{image[:id]}" )
+        %input.title_edit(type="text" name="name" value="#{image[:name]}" )
+    - else
+      .titletext
+        =image[:name]
+    %p
+      uploaded by:
       =DB[:users].where("id = ?", image[:owner]).first[:username]
     - if image[:owner] == session[:kayttaja]
       .deleteimage
@@ -31,6 +36,9 @@
         .comment
           .comment_text
             =comment[:text]
+            - if image[:owner] == session[:kayttaja]
+              %a.deletecomment(href="/delete_comment?comment_id=#{comment[:id]}" )
+                X
           .commenter
             \-
             =DB[:users].where("id = ?", comment[:commenter]).first[:username]

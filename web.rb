@@ -23,6 +23,10 @@ class App < Sinatra::Base
       DB.fetch("SELECT id, username FROM users WHERE id = ?", session[:kayttaja]).first
     end
 
+    def belongs_to_user(pictureID)
+      return !DB[:pictures].where("id = ? and owner = ?", pictureID, session[:kayttaja]).empty?
+    end
+
     def pictures_visible_for_current_user
       DB[:pictures].where("Owner = ? or public = ?", session[:kayttaja], true)
     end
@@ -36,6 +40,15 @@ class App < Sinatra::Base
 
   get '/upload' do
     haml :upload
+  end
+
+  get '/editimage' do
+    query = DB[:pictures].where("id = ? and owner = ?", params[:id], session[:kayttaja])
+    if query.empty?
+      return "This is not your image"
+    end
+    query.update(:name => params[:name])
+    redirect back
   end
 
   get '/view_images' do
@@ -138,6 +151,16 @@ class App < Sinatra::Base
     params[:comment]
     params[:targetid]
     DB[:comments] << {:commenter => session[:kayttaja], :text => params[:comment], :picture_id => params[:targetid]}
+    redirect back
+  end
+
+  get '/delete_comment' do
+    query = DB[:comments].where("id = ?", params[:comment_id])
+    pictureID = query.first[:picture_id]
+    if !belongs_to_user(pictureID)
+      return "This comment is not a comment on your content."
+    end
+    query.delete
     redirect back
   end
 

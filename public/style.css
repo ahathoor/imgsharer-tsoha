@@ -100,3 +100,22 @@ body {
 .deleteimage:hover .deletetext {
     visibility: visible;
 }
+
+.title_edit, .titlequote, .titletext {
+    font-weight: bold;
+    display: inline;
+    font-size: 2em;
+    border-style: hidden;
+    background-color: transparent;
+}
+.title_edit {
+    width: 100%
+}
+.deletecomment {
+    text-decoration: none;
+    float: right;
+    color:#969696;
+}
+.deletecomment:hover {
+    color: #262626;
+}
