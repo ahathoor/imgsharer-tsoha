@@ -1,16 +1,18 @@
+%meta(name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" )
 %html
   %head
     %link(rel="stylesheet" type="text/css" href="/style.css" )
   %body
-    %h1 Upload file
-    %form(method="post" enctype='multipart/form-data')
-      %p
-        %input(type='file' name='myfile')
-      %p
-        name
-        %input(type='text' name='name')
-      %p
-        %input(type="checkbox" name="public" checked="yes" )
-        public?
-      %br
-      %input(type='submit' value='Upload!')
+    .section
+      %h1 Upload file
+      %form(method="post" enctype='multipart/form-data')
+        %p
+          %input(type='file' name='myfile')
+        %p
+          name
+          %input(type='text' name='name')
+        %p
+          %input(type="checkbox" name="public" checked="yes" )
+          public?
+        %br
+        %input(type='submit' value='Upload!')

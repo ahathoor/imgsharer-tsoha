@@ -1,53 +1,54 @@
+%meta(name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0; user-scalable=1;" )
 %html
   %head
     %link(rel="stylesheet" type="text/css" href="/style.css" )
-  %body.imageview
-    - if image[:owner] == session[:kayttaja]
-      %form(method="get" action="/editimage" )
-        %input.title_edit(type="hidden" name="id" value="#{image[:id]}" )
-        %input.title_edit(type="text" name="name" value="#{image[:name]}" )
-    - else
-      .titletext
-        =image[:name]
-    %p
+  %body
+    .ownerinfo.section
+      %a(href="/image/#{image[:owner]}/#{image[:id]}" )
+        %img.theimage(src="/image/#{image[:owner]}/#{image[:id]}")
+      - if image[:owner] == session[:kayttaja]
+        %form(method="get" action="/editimage" )
+          %input.title_edit(type="hidden" name="id" value="#{image[:id]}" )
+          %input.title_edit(type="text" name="name" value="#{image[:name]}" )
+      - else
+        .titletext
+          =image[:name]
       uploaded by:
       =DB[:users].where("id = ?", image[:owner]).first[:username]
-    - if image[:owner] == session[:kayttaja]
-      .deleteimage
-        %a.deletetext(href="/delete/#{session[:kayttaja]}/#{image[:id]}" )
+      - if image[:owner] == session[:kayttaja]
+        %a.deleteimage(href="/delete/#{session[:kayttaja]}/#{image[:id]}" )
           delete image
-    %a(href="/image/#{image[:owner]}/#{image[:id]}" )
-      %img(src="/image/#{image[:owner]}/#{image[:id]}" width="500" )
 
-    .tags
+    .tags.section
       - DB[:categorizations].where("picture_id = ?", image[:id]).each do |category|
-        %a.tag(href="/view_images/#{category[:category_name]}" )="\##{category[:category_name]}"
+        %a.tag(href="/view_images?tags=#{category[:category_name]}" )="\##{category[:category_name]}"
         - if image[:owner] == session[:kayttaja]
           %a.tagdeleter(href="/deletetag?tag_id=#{category[:id]}" )
             delete
 
       - if image[:owner] == session[:kayttaja]
-        %form.tagform(method="post" action="/addcategory" )
-          %input(type="hidden" name="targetid" value="#{image[:id]}")
-          ="\#"
-          %input.taginput(type="text" name="category")
-    .comments
+        %span.addtag
+          add tag:
+          %form.tagform(method="post" action="/addcategory" )
+            %input(type="hidden" name="targetid" value="#{image[:id]}")
+            %input.taginput(type="text" name="category")
+    .comments.section
       - DB[:comments].where("picture_id = ?", image[:id]).each do |comment|
         .comment
-          .comment_text
-            =comment[:text]
+          .commenter
+            =DB[:users].where("id = ?", comment[:commenter]).first[:username]
             - if image[:owner] == session[:kayttaja]
               %a.deletecomment(href="/delete_comment?comment_id=#{comment[:id]}" )
-                X
-          .commenter
-            \-
-            =DB[:users].where("id = ?", comment[:commenter]).first[:username]
-    .commentform
-      %form(method="post" action="/comment" )
-        %input(type="hidden" name="targetid" value="#{image[:id]}")
-        %input.commentfield(type="text" name="comment")
-        %input.commentbutton(type="submit" value=">>")
-    %p
+                delete
+          .comment_text
+            =comment[:text]
+      .commentform
+        write comment:
+        %form(method="post" action="/comment" )
+          %input(type="hidden" name="targetid" value="#{image[:id]}")
+          %input.commentfield(type="text" name="comment")
+          %input.commentbutton(type="submit" value=">>")
+    .links.section
       %a(href="/mainpage")
         back to main page
       %br

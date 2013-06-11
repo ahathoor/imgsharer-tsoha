@@ -6,6 +6,7 @@ require 'haml'
 require 'fileutils'
 
 class App < Sinatra::Base
+  set :bind, '0.0.0.0'
   configure :development do
     register Sinatra::Reloader
   end
@@ -52,19 +53,17 @@ class App < Sinatra::Base
   end
 
   get '/view_images' do
-    haml :view_images, :locals => {:images_to_be_listed => pictures_visible_for_current_user, :filter => "All"}
-  end
-
-  get '/view_images/:tags' do
     picture_ids_in_each_category = Hash.new
     matches = pictures_visible_for_current_user
-    params[:tags].split('+').each do |tag|
-        DB[:categorizations].where("category_name = ?", tag).each_with_index do |categorization,i|
-          if i==0
-            picture_ids_in_each_category[categorization[:category_name]] = []
+    if !params[:tags].nil?
+      params[:tags].split('+').each do |tag|
+          DB[:categorizations].where("category_name = ?", tag).each_with_index do |categorization,i|
+            if i==0
+              picture_ids_in_each_category[categorization[:category_name]] = []
+            end
+            picture_ids_in_each_category[categorization[:category_name]].push(categorization[:picture_id])
           end
-          picture_ids_in_each_category[categorization[:category_name]].push(categorization[:picture_id])
-        end
+      end
     end
     picture_ids_in_each_category.each do |idsInCat|
       matches = matches.where("id in ?", idsInCat[1])

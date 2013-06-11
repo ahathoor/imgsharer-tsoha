@@ -1,25 +1,31 @@
+%meta(name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" )
 %html
   %head
     %link(rel="stylesheet" type="text/css" href="/style.css" )
   %body
-    %h1
-      ="Listing content: #{filter}"
-    %h3
-      Your uploads:
-    %ul
-      - for picture in images_to_be_listed.where("Owner = ?", session[:kayttaja]) do
-        %li
-          %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
-            =picture[:name]
-          %br
-    %h3
-      Uploads by others:
-    %ul
-      - images_to_be_listed.where("Owner != ?", session[:kayttaja]).each do |picture|
-        %li
-          %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
-            =picture[:name]
-          %br
-    %a(href="/mainpage")
-      back to main page
-      %br
+    .header.section
+      %h1
+        View images
+      #{filter}
+    .useruploads.section
+      %h3
+        Your uploads:
+      %ul
+        - for picture in images_to_be_listed.where("Owner = ?", session[:kayttaja]) do
+          %li
+            %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
+              =picture[:name]
+            %br
+    .othersuploads.section
+      %h3
+        Uploads by others:
+      %ul
+        - images_to_be_listed.where("Owner != ?", session[:kayttaja]).each do |picture|
+          %li
+            %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
+              =picture[:name]
+            %br
+    .links.section
+      %a(href="/mainpage")
+        back to main page
+        %br
