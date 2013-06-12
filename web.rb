@@ -76,6 +76,7 @@ class App < Sinatra::Base
 
   get '/image/:user/:image' do
     content_type 'image/png'
+    expires 500, :public, :must_revalidate
     File.read("uploads/#{params[:user]}/#{params[:image]}")
   end
 
