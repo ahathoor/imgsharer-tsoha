@@ -74,7 +74,7 @@ class App < Sinatra::Base
     haml :view_images, :locals => {:images_to_be_listed => matches, :filter => "#{params[:tags]}"}
   end
 
-  get '/image/:user/:image' do
+  get '/image' do
     content_type 'image/png'
     expires 500, :public, :must_revalidate
     File.read("uploads/#{params[:user]}/#{params[:image]}")
@@ -151,6 +151,13 @@ class App < Sinatra::Base
   end
 
   post '/comment' do
+    image = DB[:pictures].where("id = ?", params[:targetid]).first
+    if image.nil?
+      return "This image does not exist."
+    end
+    if image[:owner] != session[:kayttaja] and !image[:public]
+      return "This image is not public"
+    end
     params[:comment]
     params[:targetid]
     DB[:comments] << {:commenter => session[:kayttaja], :text => params[:comment], :picture_id => params[:targetid]}
@@ -161,7 +168,7 @@ class App < Sinatra::Base
     query = DB[:comments].where("id = ?", params[:comment_id])
     pictureID = query.first[:picture_id]
     if !belongs_to_user(pictureID)
-      return "This comment is not a comment on your content."
+      return "This comment is not a comment on your content or comment does not exist"
     end
     query.delete
     redirect back

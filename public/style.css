@@ -165,3 +165,12 @@ form {
 .title_edit {
     width: 100%
 }
+.public {
+    font-size: 8px;
+    color: #009926;
+    vertical-align: 75%;
+}
+.listingowner {
+    font-size: 10px;
+    color: #009926;
+}

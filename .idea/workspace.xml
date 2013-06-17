@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydb.dump" afterPath="$PROJECT_DIR$/mydb.dump" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/Määrittelydokumentti.pdf" afterPath="$PROJECT_DIR$/Docs/Määrittelydokumentti.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/style.css" afterPath="$PROJECT_DIR$/public/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/view_image.haml" afterPath="$PROJECT_DIR$/views/view_image.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/view_images.haml" afterPath="$PROJECT_DIR$/views/view_images.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.rb" afterPath="$PROJECT_DIR$/web.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tsoha.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370965443448" ignored="false" />
-    <file path="/web.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370995343134" ignored="false" />
+    <file path="/Dummy.txt" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1371506695635" ignored="false" />
+    <file path="/web.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1371507335898" ignored="false" />
     <file path="/sequel.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370703219134" ignored="false" />
     <file path="/testview.erb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369659057647" ignored="false" />
     <file path="/Gemfile" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369833522933" ignored="false" />
     <file path="/uploadfile.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1369835029915" ignored="false" />
     <file path="/mainpage.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370984428917" ignored="false" />
-    <file path="/style.css" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370993303081" ignored="false" />
+    <file path="/style.css" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1371508013172" ignored="false" />
     <file path="/kirjautumislomake.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370284322925" ignored="false" />
     <file path="/temp.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370284239475" ignored="false" />
     <file path="/loginregister.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370992900626" ignored="false" />
-    <file path="/view_images.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370993245996" ignored="false" />
+    <file path="/view_images.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1371508253755" ignored="false" />
     <file path="/upload.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370993781599" ignored="false" />
-    <file path="/view_image.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370989832507" ignored="false" />
+    <file path="/view_image.haml" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1371506778944" ignored="false" />
     <file path="/environments.rb" changelist="6e9ecc8c-aab3-4a53-8c1b-290a4365a49e" time="1370703614018" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,49 +45,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="web.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="42" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.7765625">
+            <state line="158" column="38" selection-start="4384" selection-end="4384" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#188#227#0" expanded="false" />
                 <element signature="e#289#344#0" expanded="false" />
                 <element signature="e#350#470#0" expanded="false" />
                 <element signature="e#616#740#0" expanded="false" />
                 <element signature="e#1024#1049#0" expanded="false" />
-                <element signature="e#2443#2936#0" expanded="false" />
-                <element signature="e#2450#2592#0" expanded="false" />
-                <element signature="e#2852#2902#0" expanded="false" />
-                <element signature="e#2961#2993#0" expanded="false" />
-                <element signature="e#3013#3040#0" expanded="false" />
-                <element signature="e#3052#3079#0" expanded="false" />
-                <element signature="e#3100#3653#0" expanded="false" />
-                <element signature="e#3173#3266#0" expanded="false" />
-                <element signature="e#3271#3364#0" expanded="false" />
-                <element signature="e#3392#3647#0" expanded="false" />
-                <element signature="e#3671#3738#0" expanded="false" />
-                <element signature="e#3756#4138#0" expanded="false" />
-                <element signature="e#3837#3894#0" expanded="false" />
-                <element signature="e#3999#4065#0" expanded="false" />
-                <element signature="e#4158#4344#0" expanded="false" />
-                <element signature="e#4646#4913#0" expanded="false" />
-                <element signature="e#4653#4789#0" expanded="false" />
-                <element signature="e#4934#5232#0" expanded="false" />
-                <element signature="e#5005#5047#0" expanded="false" />
-                <element signature="e#5052#5193#0" expanded="false" />
-                <element signature="e#5253#5407#0" expanded="false" />
-                <element signature="e#5291#5384#0" expanded="false" />
-                <element signature="e#5426#6132#0" expanded="false" />
-                <element signature="e#5433#5497#0" expanded="false" />
-                <element signature="e#5502#5591#0" expanded="false" />
-                <element signature="e#5615#5669#0" expanded="false" />
-                <element signature="e#5862#5955#0" expanded="false" />
-                <element signature="e#5960#6010#0" expanded="false" />
-                <element signature="e#6036#6098#0" expanded="false" />
-                <element signature="e#6153#6313#0" expanded="false" />
-                <element signature="e#6212#6307#0" expanded="false" />
-                <element signature="e#6518#6704#0" expanded="false" />
-                <element signature="e#6597#6698#0" expanded="false" />
+                <element signature="e#2437#2579#0" expanded="false" />
+                <element signature="e#2839#2889#0" expanded="false" />
+                <element signature="e#2948#2980#0" expanded="false" />
+                <element signature="e#3000#3027#0" expanded="false" />
+                <element signature="e#3039#3066#0" expanded="false" />
+                <element signature="e#3087#3640#0" expanded="false" />
+                <element signature="e#3160#3253#0" expanded="false" />
+                <element signature="e#3258#3351#0" expanded="false" />
+                <element signature="e#3379#3634#0" expanded="false" />
+                <element signature="e#3658#3725#0" expanded="false" />
+                <element signature="e#3743#4125#0" expanded="false" />
+                <element signature="e#3824#3881#0" expanded="false" />
+                <element signature="e#3986#4052#0" expanded="false" />
+                <element signature="e#4904#5171#0" expanded="false" />
+                <element signature="e#4911#5047#0" expanded="false" />
+                <element signature="e#5192#5490#0" expanded="false" />
+                <element signature="e#5263#5305#0" expanded="false" />
+                <element signature="e#5310#5451#0" expanded="false" />
+                <element signature="e#5511#5665#0" expanded="false" />
+                <element signature="e#5549#5642#0" expanded="false" />
+                <element signature="e#5684#6390#0" expanded="false" />
+                <element signature="e#5691#5755#0" expanded="false" />
+                <element signature="e#5760#5849#0" expanded="false" />
+                <element signature="e#5873#5927#0" expanded="false" />
+                <element signature="e#6120#6213#0" expanded="false" />
+                <element signature="e#6218#6268#0" expanded="false" />
+                <element signature="e#6294#6356#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -129,7 +126,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="-1.2">
+            <state line="173" column="19" selection-start="3310" selection-end="3310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,16 +135,16 @@
       <file leaf-file-name="view_image.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/view_image.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="12" selection-start="2321" selection-end="2321" vertical-scroll-proportion="-23.125">
+            <state line="7" column="52" selection-start="325" selection-end="325" vertical-scroll-proportion="-2.142857">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_images.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="view_images.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/view_images.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="14" selection-start="556" selection-end="556" vertical-scroll-proportion="-9.375">
+            <state line="31" column="69" selection-start="1164" selection-end="1178" vertical-scroll-proportion="0.71428573">
               <folding />
             </state>
           </provider>
@@ -180,18 +177,18 @@
         <option value="$PROJECT_DIR$/config/sequel.rb" />
         <option value="$PROJECT_DIR$/config/environments.rb" />
         <option value="$PROJECT_DIR$/views/mainpage.haml" />
-        <option value="$PROJECT_DIR$/views/view_image.haml" />
         <option value="$PROJECT_DIR$/views/loginregister.haml" />
-        <option value="$PROJECT_DIR$/views/view_images.haml" />
-        <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/views/upload.haml" />
+        <option value="$PROJECT_DIR$/views/view_image.haml" />
         <option value="$PROJECT_DIR$/web.rb" />
+        <option value="$PROJECT_DIR$/public/style.css" />
+        <option value="$PROJECT_DIR$/views/view_images.haml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-42" />
-    <option name="y" value="30" />
+    <option name="x" value="205" />
+    <option name="y" value="28" />
     <option name="width" value="1500" />
     <option name="height" value="825" />
   </component>
@@ -221,7 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -330,14 +326,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="ruby.project.structure" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -433,14 +430,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-42" y="30" width="1500" height="825" extended-state="0" />
+    <frame x="205" y="28" width="1500" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33977902" sideWeight="0.6711823" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.214779" sideWeight="0.6711823" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -539,39 +536,33 @@
             <element signature="e#350#470#0" expanded="false" />
             <element signature="e#616#740#0" expanded="false" />
             <element signature="e#1024#1049#0" expanded="false" />
-            <element signature="e#2443#2936#0" expanded="false" />
-            <element signature="e#2450#2592#0" expanded="false" />
-            <element signature="e#2852#2902#0" expanded="false" />
-            <element signature="e#2961#2993#0" expanded="false" />
-            <element signature="e#3013#3040#0" expanded="false" />
-            <element signature="e#3052#3079#0" expanded="false" />
-            <element signature="e#3100#3653#0" expanded="false" />
-            <element signature="e#3173#3266#0" expanded="false" />
-            <element signature="e#3271#3364#0" expanded="false" />
-            <element signature="e#3392#3647#0" expanded="false" />
-            <element signature="e#3671#3738#0" expanded="false" />
-            <element signature="e#3756#4138#0" expanded="false" />
-            <element signature="e#3837#3894#0" expanded="false" />
-            <element signature="e#3999#4065#0" expanded="false" />
-            <element signature="e#4158#4344#0" expanded="false" />
-            <element signature="e#4646#4913#0" expanded="false" />
-            <element signature="e#4653#4789#0" expanded="false" />
-            <element signature="e#4934#5232#0" expanded="false" />
-            <element signature="e#5005#5047#0" expanded="false" />
-            <element signature="e#5052#5193#0" expanded="false" />
-            <element signature="e#5253#5407#0" expanded="false" />
-            <element signature="e#5291#5384#0" expanded="false" />
-            <element signature="e#5426#6132#0" expanded="false" />
-            <element signature="e#5433#5497#0" expanded="false" />
-            <element signature="e#5502#5591#0" expanded="false" />
-            <element signature="e#5615#5669#0" expanded="false" />
-            <element signature="e#5862#5955#0" expanded="false" />
-            <element signature="e#5960#6010#0" expanded="false" />
-            <element signature="e#6036#6098#0" expanded="false" />
-            <element signature="e#6153#6313#0" expanded="false" />
-            <element signature="e#6212#6307#0" expanded="false" />
-            <element signature="e#6518#6704#0" expanded="false" />
-            <element signature="e#6597#6698#0" expanded="false" />
+            <element signature="e#2437#2579#0" expanded="false" />
+            <element signature="e#2839#2889#0" expanded="false" />
+            <element signature="e#2948#2980#0" expanded="false" />
+            <element signature="e#3000#3027#0" expanded="false" />
+            <element signature="e#3039#3066#0" expanded="false" />
+            <element signature="e#3087#3640#0" expanded="false" />
+            <element signature="e#3160#3253#0" expanded="false" />
+            <element signature="e#3258#3351#0" expanded="false" />
+            <element signature="e#3379#3634#0" expanded="false" />
+            <element signature="e#3658#3725#0" expanded="false" />
+            <element signature="e#3743#4125#0" expanded="false" />
+            <element signature="e#3824#3881#0" expanded="false" />
+            <element signature="e#3986#4052#0" expanded="false" />
+            <element signature="e#4904#5171#0" expanded="false" />
+            <element signature="e#4911#5047#0" expanded="false" />
+            <element signature="e#5192#5490#0" expanded="false" />
+            <element signature="e#5263#5305#0" expanded="false" />
+            <element signature="e#5310#5451#0" expanded="false" />
+            <element signature="e#5511#5665#0" expanded="false" />
+            <element signature="e#5549#5642#0" expanded="false" />
+            <element signature="e#5684#6390#0" expanded="false" />
+            <element signature="e#5691#5755#0" expanded="false" />
+            <element signature="e#5760#5849#0" expanded="false" />
+            <element signature="e#5873#5927#0" expanded="false" />
+            <element signature="e#6120#6213#0" expanded="false" />
+            <element signature="e#6218#6268#0" expanded="false" />
+            <element signature="e#6294#6356#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -603,23 +594,9 @@
         <state line="1" column="63" selection-start="80" selection-end="80" vertical-scroll-proportion="0.019607844" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments.rb">
+    <entry file="file://$PROJECT_DIR$/views/view_image.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="76" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="-1.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/upload.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="129" selection-start="573" selection-end="573" vertical-scroll-proportion="-10.625">
+        <state line="7" column="52" selection-start="325" selection-end="325" vertical-scroll-proportion="-2.142857">
           <folding />
         </state>
       </provider>
@@ -631,6 +608,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="19" selection-start="3310" selection-end="3310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="76" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/upload.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="129" selection-start="573" selection-end="573" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/loginregister.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="41" selection-start="447" selection-end="447" vertical-scroll-proportion="-9.375">
@@ -638,63 +636,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/view_images.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="556" selection-end="556" vertical-scroll-proportion="-9.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/view_image.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="12" selection-start="2321" selection-end="2321" vertical-scroll-proportion="-23.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="42" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.7765625">
+        <state line="158" column="38" selection-start="4384" selection-end="4384" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#188#227#0" expanded="false" />
             <element signature="e#289#344#0" expanded="false" />
             <element signature="e#350#470#0" expanded="false" />
             <element signature="e#616#740#0" expanded="false" />
             <element signature="e#1024#1049#0" expanded="false" />
-            <element signature="e#2443#2936#0" expanded="false" />
-            <element signature="e#2450#2592#0" expanded="false" />
-            <element signature="e#2852#2902#0" expanded="false" />
-            <element signature="e#2961#2993#0" expanded="false" />
-            <element signature="e#3013#3040#0" expanded="false" />
-            <element signature="e#3052#3079#0" expanded="false" />
-            <element signature="e#3100#3653#0" expanded="false" />
-            <element signature="e#3173#3266#0" expanded="false" />
-            <element signature="e#3271#3364#0" expanded="false" />
-            <element signature="e#3392#3647#0" expanded="false" />
-            <element signature="e#3671#3738#0" expanded="false" />
-            <element signature="e#3756#4138#0" expanded="false" />
-            <element signature="e#3837#3894#0" expanded="false" />
-            <element signature="e#3999#4065#0" expanded="false" />
-            <element signature="e#4158#4344#0" expanded="false" />
-            <element signature="e#4646#4913#0" expanded="false" />
-            <element signature="e#4653#4789#0" expanded="false" />
-            <element signature="e#4934#5232#0" expanded="false" />
-            <element signature="e#5005#5047#0" expanded="false" />
-            <element signature="e#5052#5193#0" expanded="false" />
-            <element signature="e#5253#5407#0" expanded="false" />
-            <element signature="e#5291#5384#0" expanded="false" />
-            <element signature="e#5426#6132#0" expanded="false" />
-            <element signature="e#5433#5497#0" expanded="false" />
-            <element signature="e#5502#5591#0" expanded="false" />
-            <element signature="e#5615#5669#0" expanded="false" />
-            <element signature="e#5862#5955#0" expanded="false" />
-            <element signature="e#5960#6010#0" expanded="false" />
-            <element signature="e#6036#6098#0" expanded="false" />
-            <element signature="e#6153#6313#0" expanded="false" />
-            <element signature="e#6212#6307#0" expanded="false" />
-            <element signature="e#6518#6704#0" expanded="false" />
-            <element signature="e#6597#6698#0" expanded="false" />
+            <element signature="e#2437#2579#0" expanded="false" />
+            <element signature="e#2839#2889#0" expanded="false" />
+            <element signature="e#2948#2980#0" expanded="false" />
+            <element signature="e#3000#3027#0" expanded="false" />
+            <element signature="e#3039#3066#0" expanded="false" />
+            <element signature="e#3087#3640#0" expanded="false" />
+            <element signature="e#3160#3253#0" expanded="false" />
+            <element signature="e#3258#3351#0" expanded="false" />
+            <element signature="e#3379#3634#0" expanded="false" />
+            <element signature="e#3658#3725#0" expanded="false" />
+            <element signature="e#3743#4125#0" expanded="false" />
+            <element signature="e#3824#3881#0" expanded="false" />
+            <element signature="e#3986#4052#0" expanded="false" />
+            <element signature="e#4904#5171#0" expanded="false" />
+            <element signature="e#4911#5047#0" expanded="false" />
+            <element signature="e#5192#5490#0" expanded="false" />
+            <element signature="e#5263#5305#0" expanded="false" />
+            <element signature="e#5310#5451#0" expanded="false" />
+            <element signature="e#5511#5665#0" expanded="false" />
+            <element signature="e#5549#5642#0" expanded="false" />
+            <element signature="e#5684#6390#0" expanded="false" />
+            <element signature="e#5691#5755#0" expanded="false" />
+            <element signature="e#5760#5849#0" expanded="false" />
+            <element signature="e#5873#5927#0" expanded="false" />
+            <element signature="e#6120#6213#0" expanded="false" />
+            <element signature="e#6218#6268#0" expanded="false" />
+            <element signature="e#6294#6356#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/view_images.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="69" selection-start="1164" selection-end="1178" vertical-scroll-proportion="0.71428573">
+          <folding />
         </state>
       </provider>
     </entry>

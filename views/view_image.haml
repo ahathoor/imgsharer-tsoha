@@ -5,7 +5,7 @@
   %body
     .ownerinfo.section
       %a(href="/image/#{image[:owner]}/#{image[:id]}" )
-        %img.theimage(src="/image/#{image[:owner]}/#{image[:id]}")
+        %img.theimage(src="/image?user=#{image[:owner]}&image=#{image[:id]}")
       - if image[:owner] == session[:kayttaja]
         %form(method="get" action="/editimage" )
           %input.title_edit(type="hidden" name="id" value="#{image[:id]}" )

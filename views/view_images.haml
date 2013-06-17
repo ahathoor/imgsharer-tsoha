@@ -22,16 +22,19 @@
           %li
             %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
               =picture[:name]
-            %br
+            - if picture[:public]
+              %span.public
+                public
     .othersuploads.section
       %h3
         Uploads by others:
       %ul
-        - images_to_be_listed.where("Owner != ?", session[:kayttaja]).each do |picture|
+        - images_to_be_listed.where("Owner != ?", session[:kayttaja]).order(:owner).each do |picture|
           %li
+            %span.listingowner
+              =DB[:users].where("ID = ?", picture[:owner]).first[:username] + ":"
             %a(href="/viewimage/#{picture[:owner]}/#{picture[:id]}" )
               =picture[:name]
-            %br
     .links.section
       %a(href="/mainpage")
         back to main page
