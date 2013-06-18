@@ -4,7 +4,7 @@
     %link(rel="stylesheet" type="text/css" href="/style.css" )
   %body
     .ownerinfo.section
-      %a(href="/image/#{image[:owner]}/#{image[:id]}" )
+      %a(href="/image?user=#{image[:owner]}&image=#{image[:id]}" )
         %img.theimage(src="/image?user=#{image[:owner]}&image=#{image[:id]}")
       - if image[:owner] == session[:kayttaja]
         %form(method="get" action="/editimage" )
