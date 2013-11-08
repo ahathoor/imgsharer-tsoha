@@ -1,4 +1,5 @@
-tsoha
+tsoha-imgsharer
 =====
 
-tsoha
+Simple image sharing service, coded for a database excercise course.
+Has tags, uses ruby.
